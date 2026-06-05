@@ -603,8 +603,8 @@ importers:
         specifier: ^14.0.0
         version: 14.0.0(webpack@5.107.2(@swc/core@1.15.40)(clean-css@5.3.3)(cssnano@7.1.9(postcss@8.5.15))(html-minifier-terser@7.2.0)(postcss@8.5.15))
       css-loader:
-        specifier: ^6.11.0
-        version: 6.11.0(@rspack/core@1.7.11)(webpack@5.107.2(@swc/core@1.15.40)(clean-css@5.3.3)(cssnano@7.1.9(postcss@8.5.15))(html-minifier-terser@7.2.0)(postcss@8.5.15))
+        specifier: ^7.1.4
+        version: 7.1.4(@rspack/core@1.7.11)(webpack@5.107.2(@swc/core@1.15.40)(clean-css@5.3.3)(cssnano@7.1.9(postcss@8.5.15))(html-minifier-terser@7.2.0)(postcss@8.5.15))
       css-minimizer-webpack-plugin:
         specifier: ^8.0.0
         version: 8.0.0(clean-css@5.3.3)(webpack@5.107.2(@swc/core@1.15.40)(clean-css@5.3.3)(cssnano@7.1.9(postcss@8.5.15))(html-minifier-terser@7.2.0)(postcss@8.5.15))
@@ -1769,7 +1769,7 @@ importers:
         version: 1.19.8(@algolia/client-search@5.52.1)(algoliasearch@5.52.1)(search-insights@2.17.3)
       '@docsearch/react':
         specifier: ^4.6.3
-        version: 4.6.3(@algolia/client-search@5.52.1)(@types/react@19.2.14)(algoliasearch@5.52.1)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(search-insights@2.17.3)
+        version: 4.6.3(@algolia/client-search@5.52.1)(@types/react@19.2.15)(algoliasearch@5.52.1)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(search-insights@2.17.3)
       '@docusaurus/core':
         specifier: 3.10.1
         version: link:../docusaurus
@@ -5974,6 +5974,9 @@ packages:
   '@types/react@19.2.14':
     resolution: {integrity: sha512-ilcTH/UniCkMdtexkoCN0bI7pMcJDvmQFPvuPvmEaYA/NSfFTAgdUSLAoVjaRJm7+6PvcM+q1zYOwS4wTYMF9w==}
 
+  '@types/react@19.2.15':
+    resolution: {integrity: sha512-eRwcGNHve+E8qtEQSSRl6urh+rFop4v8gm6O8rGv25CodbvFdLjA1vVQ1KkiFE0w0UPOnb8tDiFKL5lp0rtY5Q==}
+
   '@types/resolve@1.20.2':
     resolution: {integrity: sha512-60BCwRFOZCQhDncwQdxxeOEEkbc5dIMccYLwbxsS4TUNeVECQ/pBJ0j09mrHOl/JJvpRPGwO9SvE4nR2Nb/a4Q==}
 
@@ -7365,12 +7368,12 @@ packages:
     peerDependencies:
       postcss: ^8.4
 
-  css-loader@6.11.0:
-    resolution: {integrity: sha512-CTJ+AEQJjq5NzLga5pE39qdiSV56F8ywCIsqNIRF0r7BDgWsN25aazToqAFg7ZrtA/U016xudB3ffgweORxX7g==}
-    engines: {node: '>= 12.13.0'}
+  css-loader@7.1.4:
+    resolution: {integrity: sha512-vv3J9tlOl04WjiMvHQI/9tmIrCxVrj6PFbHemBB1iihpeRbi/I4h033eoFIhwxBBqLhI0KYFS7yvynBFhIZfTw==}
+    engines: {node: '>= 18.12.0'}
     peerDependencies:
-      '@rspack/core': 0.x || 1.x
-      webpack: ^5.0.0
+      '@rspack/core': 0.x || ^1.0.0 || ^2.0.0-0
+      webpack: ^5.27.0
     peerDependenciesMeta:
       '@rspack/core':
         optional: true
@@ -15091,21 +15094,21 @@ snapshots:
 
   '@discoveryjs/json-ext@0.6.3': {}
 
-  '@docsearch/core@4.6.3(@types/react@19.2.14)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)':
+  '@docsearch/core@4.6.3(@types/react@19.2.15)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)':
     optionalDependencies:
-      '@types/react': 19.2.14
+      '@types/react': 19.2.15
       react: 19.2.6
       react-dom: 19.2.6(react@19.2.6)
 
   '@docsearch/css@4.6.3': {}
 
-  '@docsearch/react@4.6.3(@algolia/client-search@5.52.1)(@types/react@19.2.14)(algoliasearch@5.52.1)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(search-insights@2.17.3)':
+  '@docsearch/react@4.6.3(@algolia/client-search@5.52.1)(@types/react@19.2.15)(algoliasearch@5.52.1)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(search-insights@2.17.3)':
     dependencies:
       '@algolia/autocomplete-core': 1.19.2(@algolia/client-search@5.52.1)(algoliasearch@5.52.1)(search-insights@2.17.3)
-      '@docsearch/core': 4.6.3(@types/react@19.2.14)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
+      '@docsearch/core': 4.6.3(@types/react@19.2.15)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
       '@docsearch/css': 4.6.3
     optionalDependencies:
-      '@types/react': 19.2.14
+      '@types/react': 19.2.15
       react: 19.2.6
       react-dom: 19.2.6(react@19.2.6)
       search-insights: 2.17.3
@@ -17572,6 +17575,11 @@ snapshots:
     dependencies:
       csstype: 3.2.3
 
+  '@types/react@19.2.15':
+    dependencies:
+      csstype: 3.2.3
+    optional: true
+
   '@types/resolve@1.20.2': {}
 
   '@types/retry@0.12.2': {}
@@ -19172,7 +19180,7 @@ snapshots:
       postcss-selector-parser: 7.1.1
       postcss-value-parser: 4.2.0
 
-  css-loader@6.11.0(@rspack/core@1.7.11)(webpack@5.107.2(@swc/core@1.15.40)(clean-css@5.3.3)(cssnano@7.1.9(postcss@8.5.15))(html-minifier-terser@7.2.0)(postcss@8.5.15)):
+  css-loader@7.1.4(@rspack/core@1.7.11)(webpack@5.107.2(@swc/core@1.15.40)(clean-css@5.3.3)(cssnano@7.1.9(postcss@8.5.15))(html-minifier-terser@7.2.0)(postcss@8.5.15)):
     dependencies:
       icss-utils: 5.1.0(postcss@8.5.15)
       postcss: 8.5.15
